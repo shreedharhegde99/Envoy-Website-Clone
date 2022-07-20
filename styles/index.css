@@ -1,0 +1,791 @@
+/* *{
+  background-color: rgb(161, 98, 16);
+} */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	overflow: hidden;
+	font-family: "Oswald", sans-serif;
+}
+
+.navbar {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar > div:nth-of-type(1) {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+}
+.navbar > div > img {
+	width: 50%;
+}
+
+.navbar > div:nth-of-type(2) {
+  /* display: none; */
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.navbar > div:nth-of-type(2)>div,.navbar > div:nth-of-type(2)>button {
+  display: none;
+	
+}
+
+/* started section */
+.started {
+	padding: 10px;
+	max-width: 500px;
+	margin: auto;
+}
+.started h1 {
+	color: rgb(87, 85, 85);
+	font-size: 2rem;
+}
+.started h3 {
+	color: gray;
+	font-size: 1rem;
+}
+.started form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	max-width: 350px;
+	/* margin: auto; */
+}
+
+.started form > input {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px;
+	text-align: center;
+	background-color: #8080802c;
+	outline: none;
+	border: 2px solid #ece3e3;
+	border-radius: 8px;
+}
+.started form > input[type="submit"] {
+	border: none;
+	background-color: #fb4338;
+	color: white;
+	font-weight: 600;
+	padding: 13px;
+}
+
+.started img {
+	width: 4%;
+}
+.started p:first-child {
+	text-align: center;
+}
+.started p:last-child {
+	display: none;
+}
+
+.started a {
+	color: gray;
+	text-decoration: none;
+}
+
+/* Get to work section */
+
+.get-to-work {
+	padding: 20px;
+	background-color: #b5e0ec;
+}
+
+.get-to-work > div:nth-child(1) {
+	color: #4141a2;
+}
+
+.get-to-work > div:nth-child(1) > h2 {
+	font-size: 2rem;
+}
+
+.get-to-work h3 {
+	font-size: 2rem;
+}
+
+.get-to-work button {
+	color: white;
+	background-color: #4141a2;
+	border: none;
+	border-radius: 6px;
+	padding: 10px;
+	font-size: 18px;
+}
+.get-to-work img,
+.get-to-work button {
+	width: 100%;
+}
+
+/* workplace-platform    section styling goes here */
+
+.workplace-platform {
+	padding: 20px;
+}
+
+.workplace-platform h2 {
+	font-size: 2rem;
+	color: rgb(102, 99, 99);
+}
+
+.workplace-platform > div {
+	padding-top: 20px;
+}
+.workplace-platform img {
+	width: 15%;
+}
+
+.workplace-platform div > div:nth-child(1) {
+	display: flex;
+	align-items: center;
+}
+.workplace-platform div > div > span {
+	margin-left: 20px;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.workplace-platform div > div:nth-child(2) > p {
+	font-size: 15px;
+	font-weight: 400;
+	color: #3f4450;
+}
+.workplace-platform div > div:nth-child(2) > p:nth-child(2) {
+	color: red;
+}
+.workplace-platform div > div:nth-child(2) > p:nth-child(2) > span {
+	padding: 0px 10px;
+	padding-left: 0px;
+	font-weight: 500;
+}
+
+/* video banner background section */
+.video-banner-background {
+	background: url(https://envoy.com/images/home/lionsgate-interstitial.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* padding: 5px 0px; */
+}
+
+.video-banner-background > div div {
+	font-size: 1.5rem;
+	color: white;
+	padding: 20px 20px;
+	text-align: center;
+}
+.video-banner-background img {
+	width: 25%;
+	max-width: 100px;
+}
+
+/* enterprise grade section */
+
+.enterprise-grade {
+	background: url(https://envoy.com/images/section-backgrounds/squiggles.svg);
+	background-size: contain;
+	background-repeat: repeat-x;
+	background-color: #b1d3db36;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.enterprise-grade div {
+	padding: 20px 0px;
+}
+.enterprise-grade h2 {
+	font-size: 2rem;
+	color: #4141a2;
+}
+.enterprise-grade h3 {
+	color: #808080;
+	font-weight: 400;
+}
+
+.enterprise-grade button {
+	color: white;
+	padding: 14px 35px;
+	border: none;
+	background-color: #0000b4;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+/* the envoy blog */
+
+.envoy-blog {
+	padding: 50px 20px;
+}
+
+.envoy-blog > h3 {
+	color: #777777;
+	font-weight: 500;
+}
+
+.envoy-blog > h2 {
+	font-size: 2.3rem;
+	font-weight: 400;
+	color: #414040;
+	margin: 16px 0px;
+}
+.envoy-blog img {
+	width: 100%;
+}
+
+.envoy-blog p {
+	color: #808080;
+}
+
+.envoy-blog div > div {
+	padding: 30px 0px;
+	border-bottom: 1px solid rgba(150, 144, 144, 0.445);
+}
+.envoy-blog div h3 {
+	font-size: 1.5rem;
+	color: #414040;
+	margin: 5px 0px;
+}
+
+/* stories section */
+
+.stories {
+	background-color: #fb4338;
+	padding: 30px 15px;
+}
+
+.stories > div:nth-child(1) > h2 {
+	text-align: center;
+	font-size: 2rem;
+	color: #ebd3d3;
+}
+
+.stories > div:nth-child(1) > h3 {
+	color: #ebd3d3;
+	font-weight: 300;
+	text-align: center;
+}
+.stories > div:nth-child(1) button {
+	color: white;
+	padding: 15px 5px;
+	background-color: #4141a2;
+	border: none;
+	border-radius: 7px;
+	width: 100%;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.stories > div:nth-child(2) {
+	padding: 50px 0px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	gap: 30px;
+}
+.stories > div:nth-child(2) > div {
+	background-color: white;
+	padding: 16px 22px;
+	border-radius: 8px;
+}
+.stories > div:nth-child(2) img {
+	width: 15%;
+	max-width: 50px;
+}
+
+.stories > div:nth-child(2) > div > p:nth-of-type(1) {
+	font-size: 1.3rem;
+	color: #353434;
+	font-weight: 500;
+}
+
+.stories > div:nth-child(2) > div > p:nth-of-type(2) {
+	color: #414040;
+	font-size: 1.1rem;
+}
+.stories > div:nth-child(2) > div > p:nth-of-type(1),
+.stories > div:nth-child(2) > div > p:nth-of-type(2) {
+	margin: 5px 0px;
+	padding: 5px 0px;
+}
+
+.stories > div:nth-child(2) > div > p:nth-of-type(3) {
+	color: #fb4338;
+}
+
+.stories > div:nth-child(3) {
+	border-top: 1px solid rgb(218, 206, 206);
+	padding: 50px 10px;
+	background: url(https://envoy.com/images/logos/home-logos-mobile.svg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* integrations  sections */
+
+.integrations {
+	background: url(https://envoy.com/images/section-backgrounds/freckles.svg);
+	padding: 30px 15px;
+	background-color: #eeededcb;
+}
+.integrations > section:nth-child(1) {
+	text-align: center;
+}
+.integrations > section:nth-child(1) h1 {
+	font-size: 2.7rem;
+	font-weight: 400;
+	color: #3f4450;
+	line-height: 1.2;
+}
+.integrations > section:nth-child(1) p {
+	color: #313030;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.integrations > section:nth-child(1) > div:last-child {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, auto);
+	gap: 20px;
+	padding: 30px 0px;
+}
+
+.integrations > section:nth-child(1) button {
+	border: none;
+	border-radius: 7px;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 13px 10px;
+	text-align: center;
+}
+.integrations > section:nth-child(1) button:nth-child(1) {
+	background-color: #fb4338;
+	color: white;
+}
+.integrations > section:nth-child(1) button:nth-child(2) {
+	color: #fb4338;
+	background-color: white;
+}
+.integrations > section:nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(8, 98%);
+	gap: 30px;
+	overflow-x: visible;
+}
+
+.integrations > section:nth-child(2) > div {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	max-height: max-content;
+}
+
+.integrations > section:nth-child(2) img {
+	width: 10%;
+	max-width: 50px;
+}
+
+/* try envoy section */
+.try-envoy {
+	text-align: center;
+	padding: 20px 15px;
+}
+
+.try-envoy h1 {
+	color: #fb4338;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.try-envoy p {
+	color: #3f4450;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+
+.try-envoy form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+}
+
+.try-envoy form input {
+	text-align: center;
+	padding: 5px 5px;
+	font-size: 18px;
+	background-color: #e9e0e0;
+	border: 1px solid #ccc7c7;
+	border-radius: 8px;
+	height: 30px;
+}
+
+.try-envoy form input[type="submit"] {
+	color: white;
+	background-color: #fb4338;
+	border: none;
+	height: 45px;
+	padding: 11px 10px;
+}
+
+/* reachout section */
+
+.reachout {
+	padding: 20px 10px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.reachout span {
+	color: #fb4338;
+}
+
+/* footer section */
+
+.footer-one,
+.footer-two {
+	display: none;
+}
+
+/* All media queries are written here */
+
+/* Medium screen */
+
+@media all and (min-width: 480px) {
+	.workplace-platform {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px 30px;
+	}
+	.workplace-platform > div:nth-child(1) {
+		grid-area: 1/1/2/3;
+	}
+
+	.workplace-platform h2 {
+		font-size: 2.5rem;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.workplace-platform img {
+		width: 50px;
+	}
+
+	.integrations > section:nth-child(1) > div:last-child {
+		max-width: 450px;
+		margin: auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.started p:first-child {
+		display: none;
+	}
+
+	.started p:last-child {
+		display: block;
+	}
+
+	.started p:last-child span {
+		color: #fb4338;
+	}
+
+	.get-to-work button {
+		width: 175px;
+	}
+
+	.integrations > section:nth-child(1) h1 {
+		font-size: 3.5rem;
+	}
+}
+
+/* Media queries for width above 768px */
+
+@media all and (min-width: 768px) {
+
+  .navbar{
+    padding: 30px;
+  }
+	.started {
+		text-align: center;
+		max-width: 400px;
+	}
+	.started form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.get-to-work {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+	.get-to-work img {
+		max-width: 1fr;
+		margin-top: -50px;
+	}
+
+	.get-to-work > div:nth-child(1) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.get-to-work > div:nth-child(1) h2 {
+		margin: 5px 0px;
+	}
+	.get-to-work > div:nth-child(1) p {
+		padding: 10px 0px;
+	}
+	.workplace-platform {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px 30px;
+		padding: 50px 20px;
+	}
+	.workplace-platform > div:nth-child(1) {
+		grid-area: 2/3/3/4;
+		padding: 0px;
+	}
+	.enterprise-grade > div {
+		text-align: center;
+		max-width: 600px;
+		margin: auto;
+	}
+	.envoy-blog > div {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	.envoy-blog > div p {
+		font-size: 1.3rem;
+	}
+
+	.stories > div:nth-child(2) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.stories > div:nth-child(2) > div > p {
+		font-size: 1.2rem;
+	}
+	.stories > div:nth-child(3) {
+		background-image: url(https://envoy.com/images/logos/home-logos.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.try-envoy {
+		padding: 10px 30px;
+	}
+	.try-envoy > div:nth-child(1) > div {
+		text-align: start;
+	}
+	.try-envoy > div:nth-child(1) > div h1 {
+		font-size: 3rem;
+		margin: 5px;
+	}
+
+	.try-envoy form {
+		grid-template-columns: repeat(2, 0.8fr);
+		width: 60%;
+		margin-left: auto;
+	}
+
+	.reachout > div {
+		border-top: 1px solid #c4b9b9;
+		border-bottom: 1px solid #c4b9b9;
+		text-align: start;
+		padding: 10px 25px;
+	}
+
+	.footer-one {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		row-gap: 50px;
+		padding: 30px 20px;
+	}
+	.footer-one h3 {
+		font-weight: 500;
+		color: #353434;
+		font-size: 0.9rem;
+	}
+	.footer-one p {
+		font-weight: 400;
+		color: #808080;
+		font-size: 0.9rem;
+		margin: 5px 0px;
+	}
+
+	.footer-two {
+		display: block;
+		background-color: #f6f6f9;
+		box-shadow: 0px 5px 10px gray;
+		padding: 35px 0px;
+	}
+	.footer-two > div {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 10px;
+	}
+	.footer-two > div:first-child span {
+		margin-left: 10px;
+		font-size: 15px;
+		color: #808080;
+	}
+	.footer-two > div > div:nth-child(2) {
+		display: flex;
+		flex-basis: 100px;
+		justify-content: space-evenly;
+	}
+}
+
+/* Media query for the larger screen */
+
+@media all and (min-width: 1024px) {
+  .navbar{
+    /* justify-content: flex-start; */
+    padding: 20px 15px;
+  }
+  .navbar > div:nth-of-type(1){
+    width: max-content;
+  }
+.navbar > div:nth-of-type(2)>div,.navbar > div:nth-of-type(2)>button {
+  display: inline-block;
+}
+.navbar > div:nth-of-type(2)>span:first-child{
+  display: none;
+}
+.navbar > div:nth-of-type(2)>div{
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navbar > div:nth-of-type(2)>div:hover{
+color: red;
+cursor: default;
+}
+.navbar > div:nth-of-type(2)>div span{
+  margin-top: 3px;
+  padding-left:5px ;
+  transform: rotate(180deg);
+}
+.navbar > div:nth-of-type(2)>button{
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  font-weight: 800;
+  border-radius: 9px;
+
+}
+.navbar > div:nth-of-type(2)>div:nth-of-type(1){
+  padding: 10px;
+  background-color: #a5bfee4b;
+  border-radius: 15px;
+}
+
+
+	section {
+		overflow: hidden;
+	}
+
+	section > section {
+		max-width: 1024px;
+		margin: auto;
+	}
+
+	/* maximum size limits */
+	.get-to-work > div {
+		max-width: 512px;
+	}
+	.workplace-platform > div {
+		max-width: 341.3px;
+	}
+
+	.started {
+		width: 97%;
+		max-width: 97%;
+		position: absolute;
+		max-width: none;
+	}
+	.started > div {
+		position: relative;
+		width: 35%;
+		margin: auto;
+		background-color: #ffffff;
+		padding: 12px 25px;
+		text-align: center;
+	}
+	.started > div:nth-child(2) > div {
+		width: 100%;
+	}
+	.image-banner {
+		position: relative;
+		z-index: -1;
+		top: 50px;
+	}
+	.image-banner img {
+		width: 140%;
+	}
+
+	.integrations section:nth-child(2) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 25px;
+	}
+
+  .footer-one{
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1024px;
+    margin: auto;
+  }
+  .footer-one>div{
+    max-width: 256px;
+  }
+    
+}
+
+/* Width more than 1280px */
+
+@media all and (min-width: 1280px) {
+	.stories {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 0px 50px;
+  }
+
+  .stories > div:nth-child(1){
+    align-self: center;
+  }
+	.stories > div:nth-child(1) h2{
+    text-align: start;
+    font-size: 3rem;
+  }
+  .stories > div:nth-child(1) p{
+    text-align: start;
+
+  }
+
+	.stories > div:nth-child(1) button {
+		width: 200px;
+	}
+	.stories > div:nth-child(2) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+	}
+	.stories > div:nth-child(2)>div:nth-child(1)  {
+		grid-area: 1/1/3/2;
+    height: max-content;
+    align-self: center;
+	}
+	.stories > div:last-child {
+		grid-area: 2/1/3/3;
+	}
+}
