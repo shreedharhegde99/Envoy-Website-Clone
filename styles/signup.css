@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	padding: 15px 15px 5px;
+}
+
+.logo img {
+	width: 20%;
+	max-width: 110px;
+}
+
+.main-box {
+	padding: 10px 50px 5px;
+}
+
+.main-box > div:last-child {
+	display: none;
+}
+.left-section h2 {
+	font-weight: 600;
+	color: rgb(73, 72, 72);
+	font-size: 1.2rem;
+	margin: 5px 0px;
+}
+
+.left-section > p {
+	font-size: 0.8rem;
+	color: #928c8c;
+	font-weight: 600;
+}
+
+.left-section > p a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: #59a1e4;
+	font-weight: 600;
+}
+
+.left-section > div:last-child {
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px 0px;
+}
+
+.left-section > div:last-child button {
+	padding: 12px 25px;
+	background-color: red;
+	border: none;
+	border-radius: 8px;
+	font-weight: 800;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.left-section > div:last-child button span {
+	padding-left: 10px;
+}
+.input-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-form div {
+	display: flex;
+	flex-direction: column;
+	/* padding-top:20px ; */
+}
+
+.input-form label {
+	font-size: 0.9rem;
+	padding: 12px 0px;
+	color: #928c8c;
+	font-weight: 700;
+}
+
+.input-form label span {
+	color: red;
+	padding: 0px 5px;
+}
+
+.input-form input {
+	height: 20px;
+	border-radius: 8px;
+	border: 1px solid rgb(228, 217, 217);
+	padding: 10px;
+}
+
+.input-form > div:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.input-form > div:nth-child(2) div {
+	flex-grow: 0.4;
+}
+
+/* Media query for screen width above */
+@media all and (min-width: 640px) {
+	body {
+		background-color: rgb(246, 246, 249);
+	}
+	.main-box {
+		padding: 30px;
+		/* width: 70%; */
+		background-color: white;
+		margin: auto;
+		max-width: 576px;
+	}
+}
+
+/* Media query for screen width above 1024px */
+
+@media all and (min-width: 1024px) {
+	.container {
+		padding: 50px 0px;
+	}
+	.main-box {
+		display: grid;
+		grid-template-columns: 520px 1fr;
+		gap: 40px;
+		max-width: 870px;
+		padding: 0;
+	}
+	.left-section {
+		padding: 30px 30px 30px 30px;
+	}
+	.main-box > div:last-child {
+		display: block;
+		background: url(https://signup.envoy.com/assets/images/shapes/top-shapes-1.svg),
+			url(https://signup.envoy.com/assets/images/shapes/bottom-shapes-1.svg);
+		background-repeat: no-repeat;
+		background-position: top left, bottom right;
+		background-color: #e6e6e6;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px;
+	}
+	.main-box > div:last-child > h1 span {
+		color: red;
+	}
+
+	.main-box > div:last-child > span {
+		position: relative;
+		top: 190px;
+		color: grey;
+		font-weight: 500;
+	}
+}
