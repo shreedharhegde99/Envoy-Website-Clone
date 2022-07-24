@@ -19,8 +19,9 @@ section {
 	/* justify-content: center; */
 	align-items: center;
 }
-.navbar > div > img {
+.navbar > div img {
 	width: 50%;
+  max-width: 100px;
 }
 
 .navbar > div:nth-of-type(2) {
@@ -713,6 +714,11 @@ section {
 	.navbar > div:nth-of-type(1) {
 		width: max-content;
 	}
+
+  .navbar>div img{
+    width: 100%;
+    max-width: 150px;
+  }
 	.navbar > div:nth-of-type(2) > div,
 	.navbar > div:nth-of-type(2) > button {
 		display: inline-block;
@@ -856,4 +862,8 @@ section {
 	.stories > div:last-child {
 		grid-area: 2/1/3/3;
 	}
+  .reachout>div{
+    text-align: center;
+    /* margin: auto; */
+  }
 }
