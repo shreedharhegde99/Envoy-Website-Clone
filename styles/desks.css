@@ -18,6 +18,11 @@ img {
 	justify-content: space-between;
 }
 
+.navbar a{
+	text-decoration: none;
+	color:inherit;
+}
+
 .navbar > div:nth-of-type(1) {
 	display: flex;
 	/* justify-content: center; */
@@ -32,6 +37,7 @@ img {
 	/* display: none; */
 	font-size: 20px;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .navbar > div:nth-of-type(2) > div,
@@ -716,7 +722,6 @@ img {
 	}
 	.navbar > div:nth-of-type(2) > div:hover {
 		color: red;
-		cursor: default;
 	}
 	.navbar > div:nth-of-type(2) > div span {
 		margin-top: 3px;

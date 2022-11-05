@@ -3,6 +3,10 @@ body {
 	margin: 0;
 	font-family: "Oswald", sans-serif;
 }
+.navbar a{
+	text-decoration: none;
+	color:inherit;
+}
 
 section {
 	overflow: hidden;
@@ -33,6 +37,7 @@ section {
 .navbar > div:nth-of-type(2) > div,
 .navbar > div:nth-of-type(2) > button {
 	display: none;
+	cursor: pointer;
 }
 
 /* started section */
